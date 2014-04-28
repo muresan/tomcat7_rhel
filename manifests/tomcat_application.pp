@@ -5,6 +5,7 @@ define tomcat7_rhel::tomcat_application(
   $tomcat_port,
   $tomcat_control_port = ($tomcat_port + 1000),
   $jvm_envs,
+  $catalina_envs,
   $tomcat_manager = false,
   $tomcat_admin_user = "tomcat",
   $tomcat_admin_password = "s3cr3t",
